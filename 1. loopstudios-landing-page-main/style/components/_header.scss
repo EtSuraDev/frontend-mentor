@@ -1,0 +1,114 @@
+header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 23px;
+    background-image: url(../../images/mobile/image-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .first-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 160px;
+        background-color: inherit;
+        .logo {
+            width: 150px;
+        }
+        .menu-list {
+            display: none;
+        }
+    }
+    .second-box {
+        color: white;
+        border: 3px solid white;
+        padding: 22px;
+        overflow: hidden;
+        margin-bottom: 220px;
+        max-width: 400px;
+        h1 {
+            font-size: 8vw;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        padding: 23px 50px;
+        .first-box {
+            .logo {
+                width: 220px;
+            }
+        }
+        .second-box {
+            max-width: 600px;
+            width: 80%;
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    header {
+        padding: 23px 70px;
+        background-image: url(../../images/desktop/image-hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .first-box {
+            .menu-list {
+                display: flex;
+                ul {
+                    display: flex;
+                    gap: 20px;
+                    list-style: none;
+                    color: white;
+                    font-size: 18px;
+                    li {
+                        cursor: pointer;
+                    }
+                    li:hover {
+                        color: darken( white, 20);
+                    }
+                }
+            }
+            .menu {
+                display: none;
+            }
+        }
+        .second-box {
+            max-width: 500px;
+            width: fit-content;
+            margin-bottom: 160px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        padding: 43px 160px;
+        .first-box {
+            .menu-list {
+                ul {
+                    li {
+                        font-weight: bolder;
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+        .second-box {
+            max-width: 700px;
+            width: fit-content;
+            margin-bottom: 160px;
+            h1 {
+                font-size: 70px;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import "./components/_header.scss";
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: blueviolet;
+    min-height: 100vh;
+}
