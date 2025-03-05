@@ -1,0 +1,167 @@
+.creations {
+    width: 100%;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin-bottom: 60px;
+    button {
+        padding: 10px 35px;
+        font-size: 15px;
+        margin: auto;
+        background: inherit;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: color 0.3s ease-out;
+        transition: background 0.3s ease-out;
+    }
+    button:hover {
+        background: $black;
+        color: $white;
+    }
+    .top-text {
+        .hidden-btn {
+            display: none;
+        }
+    }
+    .boxs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .box-1 {
+            background-image: url(../../images/mobile/image-deep-earth.jpg);
+        }
+        .box-2 {
+            background-image: url(../../images/mobile/image-night-arcade.jpg);
+        }
+        .box-3 {
+            background-image: url(../../images/mobile/image-soccer-team.jpg);
+        }
+        .box-4 {
+            background-image: url(../../images/mobile/image-grid.jpg);
+        }
+        .box-5 {
+            background-image: url(../../images/mobile/image-from-above.jpg);
+        }
+        .box-6 {
+            background-image: url(../../images/mobile/image-pocket-borealis.jpg);
+        }
+        .box-7 {
+            background-image: url(../../images/mobile/image-curiosity.jpg);
+        }
+        .box-8 {
+            background-image: url(../../images/mobile/image-fisheye.jpg);
+        }
+        .box {
+            @include bg-img;
+            height: 200px;
+            color: $white;
+            position: relative;
+            cursor: pointer;
+            transition: opacity 0.1s ease-in-out;
+            h1 {
+                width: 170px;
+                font-weight: 400;
+                position: absolute;
+                bottom: 35px;
+                left: 35px;
+            }
+        }
+        .box:hover {
+            opacity: 0.4;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .creations {
+        padding: 23px 50px;
+        .boxs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .box {
+                height: 340px;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    .creations {
+        padding: 23px 70px;
+        button {
+            display: none;
+        }
+        .top-text {
+            margin-bottom: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .hidden-btn {
+                display: block;
+                margin: 0;
+            }
+        }
+        .boxs {
+            grid-template-columns: 1fr 1fr 1fr;
+            .box {
+                height: 370px;
+            }
+            .box-1 {
+                background-image: url(../../images/desktop/image-deep-earth.jpg);
+            }
+            .box-2 {
+                background-image: url(../../images/desktop/image-night-arcade.jpg);
+            }
+            .box-3 {
+                background-image: url(../../images/desktop/image-soccer-team.jpg);
+            }
+            .box-4 {
+                background-image: url(../../images/desktop/image-grid.jpg);
+            }
+            .box-5 {
+                background-image: url(../../images/desktop/image-from-above.jpg);
+            }
+            .box-6 {
+                background-image: url(../../images/desktop/image-pocket-borealis.jpg);
+            }
+            .box-7 {
+                background-image: url(../../images/desktop/image-curiosity.jpg);
+            }
+            .box-8 {
+                background-image: url(../../images/desktop/image-fisheye.jpg);
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .creations {
+        .boxs {
+            .box {
+                height: 420px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .creations {
+        padding: 23px 140px;
+        .boxs {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .box {
+                height: 460px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .creations {
+        margin: auto;
+    }
+}

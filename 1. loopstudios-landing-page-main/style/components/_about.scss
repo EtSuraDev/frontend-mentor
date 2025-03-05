@@ -1,85 +1,108 @@
-.about {
-    width: 100%;
-    max-width: 900px;
-    color: $white;
-    padding: 23px;
-    background-color: $white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-    .img {
-        width: 100%;
-        height: fit-content;
-        margin-bottom: 20px;
-        img {
-            width: 100%;
-            max-height: 340px;
-            object-fit: cover;
-        }
-    }
-    .about-text {
-        text-align: center;
-        width: 90%;
-        h1 {
-            font-weight: 400;
-            color: $black;
-            margin-bottom: 20px;
-            font-size: 8vw;
-        }
-        p {
-            font-size: 15px;
-            color: $dark-gray;
-        }
-    }
-}
-
-@media (min-width: 600px) {
-    .about {
-        padding: 23px 50px;
-        .about-text {
-            h1 {
-                font-size: 45px;
+            .about {
+                width: 100%;
+                max-width: 900px;
+                color: $white;
+                padding: 23px;
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 60px;
+                .img {
+                    width: 100%;
+                    height: fit-content;
+                    margin-bottom: 20px;
+                    img {
+                        width: 100%;
+                        max-height: 340px;
+                        object-fit: cover;
+                    }
+                }
+                .about-text {
+                    text-align: center;
+                    width: 90%;
+                    h1 {
+                        font-weight: 400;
+                        color: $black;
+                        margin-bottom: 20px;
+                        font-size: 8vw;
+                    }
+                    p {
+                        font-size: 15px;
+                        color: $dark-gray;
+                    }
+                }
             }
-        }
-    }
-}
-
-@media (min-width: 750px) {
-    .about {
-        position: relative;
-        align-items: start;
-        padding: 23px 70px;
-        padding-bottom: 0px;
-        margin-bottom: 100px;
-        .img {
-            width: 600px;
-            img {
-                max-height: 400px;
+            
+            @media (min-width: 600px) {
+                .about {
+                    padding: 23px 50px;
+                    .about-text {
+                        h1 {
+                            font-size: 45px;
+                        }
+                    }
+                }
             }
-        }
-        .about-text {
-            position: absolute;
-            padding: 30px;
-            background-color: $white;
-            z-index: 100000;
-            width: 400px;
-            right: 0;
-            bottom: 0;
-            h1 {
-                font-size: 36px;
+            
+            @media (min-width: 750px) {
+                .about {
+                    position: relative;
+                    align-items: start;
+                    padding: 23px 70px;
+                    padding-bottom: 0px;
+                    margin-bottom: 100px;
+                    .img {
+                        width: 600px;
+                        img {
+                            max-height: 400px;
+                        }
+                    }
+                    .about-text {
+                        position: absolute;
+                        padding: 30px;
+                        background-color: $white;
+                        z-index: 100000;
+                        width: 400px;
+                        right: 0;
+                        bottom: 0;
+                        h1 {
+                            font-size: 36px;
+                        }
+                    }
+                }
             }
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .about {
-        max-width: 1000px;
-        padding: 23px 140px;
-        .about-text {
-            width: 400px;
-            padding: 40px;
-        }
-    }
-}
+            
+            @media (min-width: 1200px) {
+                .about {
+                    max-width: 1130px;
+                    margin: auto;
+                    padding: 0%;
+                    .about-text {
+                        width: 400px;
+                        padding: 40px;
+                    }
+                    .img {
+                        width: 800px;
+                        img {
+                            max-height: 480px;
+                        }
+                    }
+                    .about-text {
+                        font-size: 18px;
+                        width: 550px;
+                        padding: 60px;
+                        right: 110;
+                        h1 {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+            
+            @media (min-width: 1600px) {
+                .about {
+                    margin: auto;
+                    margin-bottom: 30px;
+                }
+            }
