@@ -64,6 +64,14 @@ body {
   font-size: 17px;
 }
 
+p,
+h1,
+li {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 @media (min-width: 750px) {
   .toggle {
     display: none;
@@ -108,6 +116,7 @@ header .second-box {
 }
 header .second-box h1 {
   font-size: 8vw;
+  font-weight: 300;
 }
 
 @media (min-width: 600px) {
@@ -315,7 +324,7 @@ header .second-box h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 .creations .boxs .box-1 {
   background-image: url(../../images/mobile/image-deep-earth.jpg);
@@ -511,12 +520,14 @@ footer .icons .rights span {
   }
   footer .contact ul {
     display: flex;
-    gap: 13px;
+    gap: 6px;
   }
   footer .contact ul li {
     margin-bottom: 0px;
+    font-size: 14px;
   }
   footer .icons {
     align-items: end;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
