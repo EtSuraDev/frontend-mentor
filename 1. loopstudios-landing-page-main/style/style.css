@@ -530,4 +530,15 @@ footer .icons .rights span {
     align-items: end;
     font-size: 14px;
   }
+}
+@media (min-width: 700px) {
+  footer .contact ul {
+    gap: 15px;
+  }
+  footer .contact ul li {
+    font-size: 16px;
+  }
+  footer .icons {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

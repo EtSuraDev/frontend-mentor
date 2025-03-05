@@ -77,3 +77,19 @@ footer {
         }
     }
 }
+
+@media (min-width: 700px) {
+    footer {
+        .contact {
+            ul {
+                gap: 15px;
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+        .icons {
+            font-size: 16px;
+        }
+    }
+}
