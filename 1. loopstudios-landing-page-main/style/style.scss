@@ -60,6 +60,14 @@ body {
     }
 }
 
+.me {
+    position: absolute;
+    bottom: 10px;
+    color: rgb(71, 71, 240);
+    left: 45%;
+    font-size: 17px;
+}
+
 @media (min-width: 750px) {
     .toggle {
         display: none;
